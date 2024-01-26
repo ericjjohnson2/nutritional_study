@@ -1,4 +1,5 @@
 // data is sourced from https://hub.arcgis.com/maps/f12d05c1b4054fffa34f4ae8e7599f17/about
+// data last updated in 2018
 
 let locations = [
   {
