@@ -93,7 +93,7 @@ for (let i = 0; i < locations.length; i++) {
     newMarker.addTo(layers[restaurantName]);
 
     // Bind a popup to the marker that will  display on being clicked. This will be rendered as HTML.
-    newMarker.bindPopup(`<h3> Restaurant Name: ${locations[i].Restaurant}</h3><hr><p> 
+    newMarker.bindPopup(`<h1>${locations[i].Restaurant}</h1><hr><p> 
      Street Address: ${locations[i].Address}</p>
     <hr><p> City: ${locations[i].City}</p>`);
 }
