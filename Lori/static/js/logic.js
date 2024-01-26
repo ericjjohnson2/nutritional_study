@@ -40,18 +40,25 @@ L.control.layers(null, overlays, {
 // Initialize an object that contains icons for each layer group.
 let icons = {
     McDonalds: L.ExtraMarkers.icon({
+    //   icon: 'ion-android-pizza',
+    //   iconColor: "white",
       markerColor: "red",
       shape: "circle"
     }),
 
     Burger_King: L.ExtraMarkers.icon({
+    //   icon: 'ion-settings',
+    //   iconColor: "white",
       markerColor: "yellow",
       shape: "circle"
     }),
 
     Taco_Bell: L.ExtraMarkers.icon({
+    //   icon: 'fa-bell',
+    //   iconColor: "white",
       markerColor: "purple",
-      shape: "circle"
+      shape: "circle",
+    //   prefix: 'fa'
     })
 };
 
@@ -74,13 +81,13 @@ for (let i = 0; i < locations.length; i++) {
         restaurantName = "Taco_Bell";
     }
 
-    // Create a new marker with the appropriate icon and coordinates.
-    let newMarker = L.marker([locations[i].Lat, locations[i].Long_]);
-
     // // Create a new marker with the appropriate icon and coordinates.
-    // let newMarker = L.marker([locations[i].Lat, locations[i].Long_], {
-    //      icon: icons[restaurantName]
-    //      });
+    // let newMarker = L.marker([locations[i].Lat, locations[i].Long_]);
+
+    // Create a new marker with the appropriate icon and coordinates.
+    let newMarker = L.marker([locations[i].Lat, locations[i].Long_], {
+         icon: icons[restaurantName]
+         });
 
     // Add the new marker to the appropriate layer.
     newMarker.addTo(layers[restaurantName]);
