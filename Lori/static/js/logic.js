@@ -48,7 +48,7 @@ let icons = {
       markerColor: "yellow",
       shape: "circle"
     }),
-    
+
     Taco_Bell: L.ExtraMarkers.icon({
       markerColor: "purple",
       shape: "circle"
@@ -75,9 +75,12 @@ for (let i = 0; i < locations.length; i++) {
     }
 
     // Create a new marker with the appropriate icon and coordinates.
-    let newMarker = L.marker([locations[i].Lat, locations[i].Long_], {
-        icon: icons[restaurantName]
-      });
+    let newMarker = L.marker([locations[i].Lat, locations[i].Long_]);
+
+    // // Create a new marker with the appropriate icon and coordinates.
+    // let newMarker = L.marker([locations[i].Lat, locations[i].Long_], {
+    //      icon: icons[restaurantName]
+    //      });
 
     // Add the new marker to the appropriate layer.
     newMarker.addTo(layers[restaurantName]);
