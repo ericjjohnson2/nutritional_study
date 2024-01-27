@@ -11,3 +11,5 @@ https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=44.9778,-9
 # Dairy Queen
 # Subway
 # Taco Bell    ****
+
+https://git.bootcampcontent.com/University-of-Minnesota/UofM-VIRT-DATA-PT-09-2023-U-LOLC
