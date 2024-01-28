@@ -97,3 +97,17 @@ for (let i = 0; i < locations.length; i++) {
      Street Address: ${locations[i].Address}</p>
     <hr><p> City: ${locations[i].City}</p>`);
 }
+
+var legend = L.control({position: 'bottomleft'});
+
+legend.onAdd = function(map) {
+    var div = L.DomUtil.create("div", "legend");
+    div.innerHTML += "<h4>Restaurants</h4>";
+    div.innerHTML += '<i style="background: #A42409"></i><span>McDonalds</span><br>';
+    div.innerHTML += '<i style="background: #FFC300"></i><span>Burger King</span><br>';
+    div.innerHTML += '<i style="background: #6A2C89"></i><span>Taco Bell</span><br>';
+
+    return div;
+};
+
+legend.addTo(map);
