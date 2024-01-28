@@ -94,10 +94,13 @@ for (let i = 0; i < locations.length; i++) {
      Street Address: ${locations[i].Address}</p>
     <hr><p> City: ${locations[i].City}</p>`);
 
-    // // center the map on a marker when you click it
-    // newMarker.on('click', function() {
-    //     map.fitBounds(newMarker.getBounds());  
-    // });
+    // center the map on a marker when you double click it
+    // code found here for fit bounds: https://jeffreymorgan.io/articles/how-to-center-a-leaflet-map-on-a-marker/
+    newMarker.on('dblclick', function() {
+        var latLngs = [ newMarker.getLatLng() ];
+        var markerBounds = L.latLngBounds(latLngs);
+        map.fitBounds(markerBounds);  
+    });
 }
 
 
@@ -108,7 +111,8 @@ var legend = L.control({position: 'bottomleft'});
 
 legend.onAdd = function(map) {
     var div = L.DomUtil.create("div", "legend");
-    div.innerHTML += "<h4>Restaurants</h4>";
+    div.innerHTML += "<h3>Restaurants</h3>";
+    div.innerHTML += "<h5>*Double click marker to zoom in*</h5>";
     div.innerHTML += '<i style="background: #A42409"></i><span>McDonalds</span><br>';
     div.innerHTML += '<i style="background: #FFC300"></i><span>Burger King</span><br>';
     div.innerHTML += '<i style="background: #6A2C89"></i><span>Taco Bell</span><br>';
