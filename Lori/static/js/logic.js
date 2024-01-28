@@ -98,6 +98,9 @@ for (let i = 0; i < locations.length; i++) {
     <hr><p> City: ${locations[i].City}</p>`);
 }
 
+// create a legend for the map
+// helpful code found here: https://codepen.io/haakseth/pen/KQbjdO
+// helpful website for finding numbers of colors found here: https://htmlcolorcodes.com/
 var legend = L.control({position: 'bottomleft'});
 
 legend.onAdd = function(map) {
