@@ -81,9 +81,6 @@ for (let i = 0; i < locations.length; i++) {
         restaurantName = "Taco_Bell";
     }
 
-    // // Create a new marker with the appropriate icon and coordinates.
-    // let newMarker = L.marker([locations[i].Lat, locations[i].Long_]);
-
     // Create a new marker with the appropriate icon and coordinates.
     let newMarker = L.marker([locations[i].Lat, locations[i].Long_], {
          icon: icons[restaurantName]
@@ -96,7 +93,13 @@ for (let i = 0; i < locations.length; i++) {
     newMarker.bindPopup(`<h1>${locations[i].Restaurant}</h1><hr><p> 
      Street Address: ${locations[i].Address}</p>
     <hr><p> City: ${locations[i].City}</p>`);
+
+    // // center the map on a marker when you click it
+    // newMarker.on('click', function() {
+    //     map.fitBounds(newMarker.getBounds());  
+    // });
 }
+
 
 // create a legend for the map
 // helpful code found here: https://codepen.io/haakseth/pen/KQbjdO
