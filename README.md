@@ -11,11 +11,12 @@ Our project provides the nutritional value of food sold at eight major chain fas
 * cholesterol
 * fiber 
 
-We have created visualizations that display the nutritional content of specific foods, compare food items, and compare the restaurants themselves. We also created an interactive quiz to help visitors guess the nutritional value of some of America's favorite fast foods.
+We have created visualizations that display the nutritional content of specific foods, compare food items, and compare the restaurants themselves. We also created an interactive quiz to help visitors make informed choices when ordering some of America's favorite fast foods.
   
 ## Instructions on how to use and interact with the project
 
 ## At least one paragraph summarizing efforts for ethical considerations made in the project
+Ethical considerations made for this project: we are assuming fast food is unhealthy. We are limited by the number of restaurants in our dataset. We chose to not utilize web scraping for pricing data since fast food companies as well as websites with priciing data specifically stated we could not scrape data. PygWalker, dataset, privacy,
 
 ## References for the data source(s):
 * pygwalker references:
@@ -29,6 +30,7 @@ We have created visualizations that display the nutritional content of specific 
 
 * Dataset:
 *  https://www.kaggle.com/datasets/ulrikthygepedersen/fastfood-nutrition [Which fast food products are worst for you?]
+*  https://www.kaggle.com/datasets/iamsouravbanerjee/top-50-fastfood-chains-in-usa [USA's Culinary Landscape: A Deep Dive into the Top 50 Fast-Food Chains (2021)]
 
 
 ## References for any code used that is not your own
