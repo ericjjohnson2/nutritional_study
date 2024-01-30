@@ -55,55 +55,39 @@ L.control.layers(null, overlays, {
 // Initialize an object that contains icons for each layer group.
 let icons = {
     McDonalds: L.ExtraMarkers.icon({
-    //   icon: 'ion-android-pizza',
-    //   iconColor: "white",
       markerColor: "red",
       shape: "circle"
     }),
 
     Burger_King: L.ExtraMarkers.icon({
-    //   icon: 'ion-settings',
-    //   iconColor: "white",
       markerColor: "yellow",
       shape: "circle"
     }),
 
     Taco_Bell: L.ExtraMarkers.icon({
-    //   icon: 'fa-bell',
-    //   iconColor: "white",
       markerColor: "purple",
       shape: "circle",
     }),
     Chick_Fil_A: L.ExtraMarkers.icon({
-    //   icon: 'ion-android-pizza',
-    //   iconColor: "white",
         markerColor: "orange",
         shape: "circle"
     }),
 
     Sonic: L.ExtraMarkers.icon({
-    //   icon: 'ion-settings',
-    //   iconColor: "white",
         markerColor: "blue",
         shape: "circle"
     }),
 
     Arbys: L.ExtraMarkers.icon({
-    //   icon: 'fa-bell',
-    //   iconColor: "white",
         markerColor: "black",
         shape: "circle",
     }),
     Dairy_Queen: L.ExtraMarkers.icon({
-    //   icon: 'ion-android-pizza',
-    //   iconColor: "white",
         markerColor: "pink",
         shape: "circle"
     }),
 
     Subway: L.ExtraMarkers.icon({
-    //   icon: 'ion-settings',
-    //   iconColor: "white",
         markerColor: "green",
         shape: "circle"
     }),
