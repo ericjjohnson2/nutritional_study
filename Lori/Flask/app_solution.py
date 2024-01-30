@@ -32,22 +32,28 @@ app = Flask(__name__)
 # Flask Routes
 #################################################
 
-@app.route("/api/data/<column_name>", methods=['GET'])
-def get_data(column_name):
+@app.route("/api/data", methods=['GET'])
+def get_data():
     # create session (link from python to db)
     session = Session(engine)
 
     # query the desired column
-    results = list(session.query(getattr(Place, column_name)))
+    results = session.query(Place).all()
 
     # close the session
     session.close()
 
-    # Convert list of tuples into normal list
-    all_values = list(np.ravel(results))
-    response = jsonify([str(a) for a in all_values])
+    # Convert the results to a list of dictionaries
+    data_list = [row.__dict__ for row in results]
 
-    # https://stackoverflow.com/questions/26980713/solve-cross-origin-resource-sharing-with-flask
+    # Remove the '_sa_instance_state' key from each dictionary
+    for item in data_list:
+        item.pop('_sa_instance_state', None)
+
+    # Convert list of dictionaries into JSON
+    response = jsonify(data_list)
+
+    # Add CORS header
     response.headers.add('Access-Control-Allow-Origin', '*')
     return response
 

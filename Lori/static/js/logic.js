@@ -1,3 +1,6 @@
+// assign the local url to a constant variable
+const url = "http://localhost:5000/api/data"
+
 // Create the tile layer that will be the background of our map.
 let streetmap = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -93,60 +96,62 @@ let icons = {
     }),
 };
 
-// Initialize restaurantName, which will be used as a key to access the appropriate layers and icons
-let restaurantName;
+// Perform an API call to the places dataset
+d3.json(url).then(function(data) {
+    console.log(data)
+    // Initialize restaurantName, which will be used as a key to access the appropriate layers and icons
+    let restaurantName;
 
+    // use a for loop to cycle through the locations
+    for (let i = 0; i < data.length; i++) {
+        
+        if (data[i].Restaurant == "McDonald's") {
+            restaurantName = "McDonalds";
+        }
+        else if (data[i].Restaurant == "Burger King") {
+            restaurantName = "Burger_King";
+        }
+        else if (data[i].Restaurant == "Taco Bell") {
+            restaurantName = "Taco_Bell";
+        }
+        else if (data[i].Restaurant == "Chick-fil-A") {
+            restaurantName = "Chick_Fil_A";
+        }
+        else if (data[i].Restaurant == "Sonic Drive-In") {
+            restaurantName = "Sonic";
+        }
+        else if (data[i].Restaurant == "Arby's") {
+            restaurantName = "Arbys";
+        }
+        else if (data[i].Restaurant == "Dairy Queen") {
+            restaurantName = "Dairy_Queen";
+        }
+        else if (data[i].Restaurant == "Subway") {
+            restaurantName = "Subway";
+        }
 
-// use a for loop to cycle through the locations
-for (let i = 0; i < locations.length; i++) {
-    
-    if (locations[i].Restaurant == "McDonald's") {
-        restaurantName = "McDonalds";
-    }
-    else if (locations[i].Restaurant == "Burger King") {
-        restaurantName = "Burger_King";
-    }
-    else if (locations[i].Restaurant == "Taco Bell") {
-        restaurantName = "Taco_Bell";
-    }
-    else if (locations[i].Restaurant == "Chick-fil-A") {
-        restaurantName = "Chick_Fil_A";
-    }
-    else if (locations[i].Restaurant == "Sonic Drive-In") {
-        restaurantName = "Sonic";
-    }
-    else if (locations[i].Restaurant == "Arby's") {
-        restaurantName = "Arbys";
-    }
-    else if (locations[i].Restaurant == "Dairy Queen") {
-        restaurantName = "Dairy_Queen";
-    }
-    else if (locations[i].Restaurant == "Subway") {
-        restaurantName = "Subway";
-    }
+        // Create a new marker with the appropriate icon and coordinates.
+        let newMarker = L.marker([data[i].Lat, data[i].Long_], {
+            icon: icons[restaurantName]
+            });
 
-    // Create a new marker with the appropriate icon and coordinates.
-    let newMarker = L.marker([locations[i].Lat, locations[i].Long_], {
-         icon: icons[restaurantName]
-         });
+        // Add the new marker to the appropriate layer.
+        newMarker.addTo(layers[restaurantName]);
 
-    // Add the new marker to the appropriate layer.
-    newMarker.addTo(layers[restaurantName]);
+        // Bind a popup to the marker that will  display on being clicked. This will be rendered as HTML.
+        newMarker.bindPopup(`<h1>${data[i].Restaurant}</h1><hr><p> 
+        Street Address: ${data[i].Address}</p>
+        <hr><p> City: ${data[i].City}</p>`);
 
-    // Bind a popup to the marker that will  display on being clicked. This will be rendered as HTML.
-    newMarker.bindPopup(`<h1>${locations[i].Restaurant}</h1><hr><p> 
-     Street Address: ${locations[i].Address}</p>
-    <hr><p> City: ${locations[i].City}</p>`);
-
-    // center the map on a marker when you double click it
-    // code found here for fit bounds: https://jeffreymorgan.io/articles/how-to-center-a-leaflet-map-on-a-marker/
-    newMarker.on('dblclick', function() {
-        var latLngs = [ newMarker.getLatLng() ];
-        var markerBounds = L.latLngBounds(latLngs);
-        map.fitBounds(markerBounds);  
-    });
-}
-
+        // center the map on a marker when you double click it
+        // code found here for fit bounds: https://jeffreymorgan.io/articles/how-to-center-a-leaflet-map-on-a-marker/
+        newMarker.on('dblclick', function() {
+            var latLngs = [ newMarker.getLatLng() ];
+            var markerBounds = L.latLngBounds(latLngs);
+            map.fitBounds(markerBounds);  
+        });
+    }
+})
 
 // create a legend for the map
 // helpful code found here: https://codepen.io/haakseth/pen/KQbjdO
