@@ -8,6 +8,11 @@ let layers = {
     McDonalds: new L.LayerGroup(),
     Burger_King: new L.LayerGroup(),
     Taco_Bell: new L.LayerGroup(),
+    Chick_Fil_A: new L.LayerGroup(),
+    Sonic: new L.LayerGroup(),
+    Arbys: new L.LayerGroup(),
+    Dairy_Queen: new L.LayerGroup(),
+    Subway: new L.LayerGroup(),
 };
 
 // Create the map with our layers.
@@ -18,6 +23,11 @@ let map = L.map("map-id", {
       layers.McDonalds,
       layers.Burger_King,
       layers.Taco_Bell,
+      layers.Chick_Fil_A,
+      layers.Sonic,
+      layers.Arbys,
+      layers.Dairy_Queen,
+      layers.Subway,
     ]
 });
 
@@ -29,6 +39,11 @@ let overlays = {
     "McDonald's": layers.McDonalds,
     "Burger King": layers.Burger_King,
     "Taco Bell": layers.Taco_Bell,
+    "Chick-fil-A": layers.Chick_Fil_A,
+    "Sonic Drive In": layers.Sonic,
+    "Arby's": layers.Arbys,
+    "Dairy Queen": layers.Dairy_Queen,
+    "Subway": layers.Subway,
 };
   
 // Create a control for our layers, and add our overlays to it.
@@ -58,8 +73,40 @@ let icons = {
     //   iconColor: "white",
       markerColor: "purple",
       shape: "circle",
-    //   prefix: 'fa'
-    })
+    }),
+    Chick_Fil_A: L.ExtraMarkers.icon({
+    //   icon: 'ion-android-pizza',
+    //   iconColor: "white",
+        markerColor: "orange",
+        shape: "circle"
+    }),
+
+    Sonic: L.ExtraMarkers.icon({
+    //   icon: 'ion-settings',
+    //   iconColor: "white",
+        markerColor: "blue",
+        shape: "circle"
+    }),
+
+    Arbys: L.ExtraMarkers.icon({
+    //   icon: 'fa-bell',
+    //   iconColor: "white",
+        markerColor: "black",
+        shape: "circle",
+    }),
+    Dairy_Queen: L.ExtraMarkers.icon({
+    //   icon: 'ion-android-pizza',
+    //   iconColor: "white",
+        markerColor: "pink",
+        shape: "circle"
+    }),
+
+    Subway: L.ExtraMarkers.icon({
+    //   icon: 'ion-settings',
+    //   iconColor: "white",
+        markerColor: "green",
+        shape: "circle"
+    }),
 };
 
 // Initialize restaurantName, which will be used as a key to access the appropriate layers and icons
@@ -72,13 +119,26 @@ for (let i = 0; i < locations.length; i++) {
     if (locations[i].Restaurant == "McDonald's") {
         restaurantName = "McDonalds";
     }
-
     else if (locations[i].Restaurant == "Burger King") {
         restaurantName = "Burger_King";
     }
-
     else if (locations[i].Restaurant == "Taco Bell") {
         restaurantName = "Taco_Bell";
+    }
+    else if (locations[i].Restaurant == "Chick-fil-A") {
+        restaurantName = "Chick_Fil_A";
+    }
+    else if (locations[i].Restaurant == "Sonic Drive-In") {
+        restaurantName = "Sonic";
+    }
+    else if (locations[i].Restaurant == "Arby's") {
+        restaurantName = "Arbys";
+    }
+    else if (locations[i].Restaurant == "Dairy Queen") {
+        restaurantName = "Dairy_Queen";
+    }
+    else if (locations[i].Restaurant == "Subway") {
+        restaurantName = "Subway";
     }
 
     // Create a new marker with the appropriate icon and coordinates.
@@ -116,6 +176,11 @@ legend.onAdd = function(map) {
     div.innerHTML += '<i style="background: #A42409"></i><span>McDonalds</span><br>';
     div.innerHTML += '<i style="background: #FFC300"></i><span>Burger King</span><br>';
     div.innerHTML += '<i style="background: #6A2C89"></i><span>Taco Bell</span><br>';
+    div.innerHTML += '<i style="background: #FFA500"></i><span>Chick-fil-A</span><br>';
+    div.innerHTML += '<i style="background: #0B75D3"></i><span>Sonic Drive-In</span><br>';
+    div.innerHTML += '<i style="background: #000000"></i><span>Arbys</span><br>';
+    div.innerHTML += '<i style="background: #DA70D6"></i><span>Dairy Queen</span><br>';
+    div.innerHTML += '<i style="background: #008000"></i><span>Subway</span><br>';
 
     return div;
 };
