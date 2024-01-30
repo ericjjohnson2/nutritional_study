@@ -32,6 +32,8 @@ app = Flask(__name__)
 # Flask Routes
 #################################################
 
+# code from below was sourced from ChatGPT
+
 @app.route("/api/data", methods=['GET'])
 def get_data():
     # create session (link from python to db)
