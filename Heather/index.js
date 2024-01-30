@@ -65,17 +65,17 @@ const quizData = [
   fact: "Fast Food Fact: The Recommended Daily Amount of sodium is 2,300mg - about a teaspoon of salt"
 },
 {
-  question: "Whose chicken sandwich has the least amount of sodium?",
+  question: "Which Taco Bell menu item has the most calories from fat?",
   options: [
-      "",
-      "",
-      "",
-      ""
+      "Smothered Steak Burrito",
+      "XXL Grilled Stuft Chicken Burrito",
+      "Double Chalupa",
+      "Cheesy Gordita Crunch"
 ],
-  answer: "",
-  correctMessage: "Correct! ",
-  incorrectMessage: "Incorrect. ",
-  fact: "Fast Food Fact: The Recommended Daily Amount of sodium is 2,300mg - about a teaspoon of salt"
+  answer: "XXL Grilled Stuft Chicken Burrito",
+  correctMessage: "Correct! The XXL Grilled Stuft Chicken Burrito has 320 calories from fat",
+  incorrectMessage: "Incorrect. The XXL Grilled Stuft Chicken Burrito has 320 calories from fat",
+  fact: "Fast Food Fact: The Institute of Medicine and the American Heart Association recommend a total fat intake of 25-35 percent of calories."
 },  
 ];
 
