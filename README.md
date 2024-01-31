@@ -34,3 +34,5 @@ Ethical considerations made for this project: we are assuming fast food is unhea
 
 
 ## References for any code used that is not your own
+Basic Quiz Code
+https://medium.com/@codepicker57/building-an-interactive-quiz-with-html-css-and-javascript-efe9bd8129e2
