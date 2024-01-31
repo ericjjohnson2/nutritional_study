@@ -44,6 +44,7 @@ Most federal laws and regulations surrounding privacy and data regulations are a
      - Help to set the background color of the legend [here](https://codepen.io/haakseth/pen/KQbjdO). 
      - Code found here for fit bounds in leaflet found [here](https://jeffreymorgan.io/articles/how-to-center-a-leaflet-map-on-a-marker/).
      - Support setting up the legend found [here](https://codepen.io/haakseth/pen/KQbjdO) and html color identification found [here](https://htmlcolorcodes.com/).
+     - Code for word-wrap in legend found [here](https://stackoverflow.com/questions/3587390/how-can-i-make-text-appear-on-next-line-instead-of-overflowing)
 
 
 
