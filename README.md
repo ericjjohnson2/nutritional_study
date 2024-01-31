@@ -1,7 +1,7 @@
 # Project-3-Fastfood Topic: Nutritional Content of Fast Food
 
 ## An overview of the project and its purpose
-Our project provides the nutritional value of food sold at eight major chain fast food restaurants located in Minnesota, specifically at locations within the [Twin Cities, Minnesota](https://en.wikipedia.org/wiki/Minneapolis%E2%80%93Saint_Paul) This will allow users to analyze/compare several nutritional content:
+Our project provides the nutritional value of food sold at eight major chain fast food restaurants located in Minnesota, specifically at locations within the [Twin Cities, Minnesota.](https://en.wikipedia.org/wiki/Minneapolis%E2%80%93Saint_Paul) This will allow users to analyze/compare several nutritional content:
 * calories
 * protein
 * sodium
