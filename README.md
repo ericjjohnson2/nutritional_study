@@ -35,5 +35,13 @@ Most federal laws and regulations surrounding privacy and data regulations are a
 *  https://www.kaggle.com/datasets/iamsouravbanerjee/top-50-fastfood-chains-in-usa [USA's Culinary Landscape: A Deep Dive into the Top 50 Fast-Food Chains (2021)]
 
 ## References for any code used that is not your own
-Basic Quiz Code
-https://medium.com/@codepicker57/building-an-interactive-quiz-with-html-css-and-javascript-efe9bd8129e2
+- Basic Quiz Code
+     - https://medium.com/@codepicker57/building-an-interactive-quiz-with-html-css-and-javascript-efe9bd8129e2
+- Flask app route code - assistance from ChatGPT
+- Map Code
+     - Help to set the background color of the legend [here](https://codepen.io/haakseth/pen/KQbjdO). 
+     - Code found here for fit bounds in leaflet found [here](https://jeffreymorgan.io/articles/how-to-center-a-leaflet-map-on-a-marker/).
+     - Support setting up the legend found [here](https://codepen.io/haakseth/pen/KQbjdO) and html color identification found [here](https://htmlcolorcodes.com/).
+
+
+
