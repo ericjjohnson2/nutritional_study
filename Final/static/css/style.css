@@ -2,16 +2,19 @@ html,
 body,
 #map-id {
   height: 100%;
-  padding: 0;
+  padding: 20px;
   margin: 0;
 }
 
 /* help setting the background color of the legend here: https://codepen.io/haakseth/pen/KQbjdO */
 .legend {
-  line-height: 18px;
+  height: 250px;
+  width: 160px;
+  line-height: 16px;
+  word-wrap: break-word;
   color: #000000;
   background: white;
-  padding: 4px 8px;
+  padding: 0px 8px;
 }
 
 
