@@ -3,25 +3,32 @@ import numpy as np
 import sqlalchemy
 from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
-from sqlalchemy import create_engine, func
+from sqlalchemy import create_engine, func, inspect
 
 from flask import Flask, jsonify
 
 
-#################################################
-# Database Setup
-#################################################
-engine = create_engine("sqlite:///../data/places.sqlite")
+# #################################################
+# # Database Setup
+# #################################################
+engine = create_engine("sqlite:///../data/chain_db.sqlite")
 
-# reflect an existing database into a new model
+inspector = inspect(engine)
+print(inspector.get_table_names())
+
+# # reflect an existing database into a new model
 Base = automap_base()
-# reflect the tables
-Base.prepare(autoload_with=engine, reflect=True)
+# # reflect the tables
+Base.prepare(engine, reflect=False)
 
-# Save reference to the table
-print(Base.classes.keys())
-Place = Base.classes.place
-Fast_food = Base.classes.fast_food
+# Place = Base.classes.place
+# Fast_food = Base.classes.fast_food
+# Summary_stats = Base.classes.summary_stats
+
+metadata = Base.metadata
+Place = metadata.tables['place']
+Fast_food = metadata.tables['fast_food']
+Summary_stats = metadata.tables['summary_stats']
 
 #################################################
 # Flask Setup
@@ -67,6 +74,31 @@ def get_data2():
 
     # query the desired column
     results = session.query(Fast_food).all()
+
+    # close the session
+    session.close()
+
+    # Convert the results to a list of dictionaries
+    data_list = [row.__dict__ for row in results]
+
+    # Remove the '_sa_instance_state' key from each dictionary
+    for item in data_list:
+        item.pop('_sa_instance_state', None)
+
+    # Convert list of dictionaries into JSON
+    response = jsonify(data_list)
+
+    # Add CORS header
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
+
+@app.route("/api/data3", methods=['GET'])
+def get_data3():
+    # create session (link from python to db)
+    session = Session(engine)
+
+    # query the desired column
+    results = session.query(Summary_stats).all()
 
     # close the session
     session.close()
