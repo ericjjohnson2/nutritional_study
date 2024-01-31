@@ -76,7 +76,37 @@ const quizData = [
   correctMessage: "Correct! The XXL Grilled Stuft Chicken Burrito has 320 calories from fat",
   incorrectMessage: "Incorrect. The XXL Grilled Stuft Chicken Burrito has 320 calories from fat",
   fact: "Fast Food Fact: The Institute of Medicine and the American Heart Association recommend a total fat intake of 25-35 percent of calories."
-},  
+}, 
+{
+  question: "If you are on a low carb diet, which should you avoid?",
+  options: [
+      "Taco Bell Triple Melt Burrito",
+      "Subway Footlong Turkey & Bacon Avocado",
+      "Sonic 4 Piece Super Crunch Chicken Strip Dinner",
+      "Arbys Bourbon BBQ Steak Sandwich"
+],
+  answer: "Sonic 4 Piece Super Crunch Chicken Strip Dinner",
+  correctMessage: "Correct! The Sonic 4 Piece Super Crunch Chicken Strip Dinner has 118g of carbs",
+  incorrectMessage: "Incorrect. The Sonic 4 Piece Super Crunch Chicken Strip Dinner has 118g of carbs",
+  fact: "Fast Food Fact: The recommended amount of carbohydrates is between 225 and 325g for a 2,000 calorie diet."
+}, 
+{
+  question: "Which Fast Food Restaurant has more items with fewer calories, sat/trans fat, sodium and cholesterol?",
+  options: [
+      "Burger King",
+      "Dairy Queen",
+      "McDonald's",
+      "Sonic",
+      "Subway",
+      "Taco Bell",
+      "Arby's",
+      "Chick Fil-A"
+],
+  answer: "Taco Bell",
+  correctMessage: "Correct! The answer is Taco Bell ",
+  incorrectMessage: "Incorrect. The answer is Taco Bell",
+  fact: "Fast Food Fact: In March 2010, Congress passed a national law requiring chain restaurants with 20 or more outlets to list calories and other nutrition information on menus and menu boards."
+}, 
 ];
 
 const questionElement = document.getElementById("question");
