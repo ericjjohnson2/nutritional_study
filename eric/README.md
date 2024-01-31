@@ -9,3 +9,6 @@ https://stackoverflow.com/questions/36351109/ipython-notebook-ipywidgets-does-no
 altair references:
 https://stackoverflow.com/questions/68891702/dropdown-filter-above-the-chart-in-altair <br>
 https://altair-viz.github.io/user_guide/interactions.html
+
+pandas: 
+pandas: https://stackoverflow.com/questions/13411544/delete-a-column-from-a-pandas-dataframe
