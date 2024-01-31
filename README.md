@@ -20,7 +20,7 @@ We have created visualizations to display the nutritional content of specific fo
 ## At least one paragraph summarizing efforts for ethical considerations made in the project
 Ethical considerations made for this project: we are assuming fast food is unhealthy. We chose to not utilize web scraping for pricing data since fast food companies as well as websites with pricing data specifically stated we could not scrape data. The source of the dataset is Kaggle.com and the Fastfood Nutrition dataset references this [license:](https://creativecommons.org/licenses/by/4.0/) and the Top 50 Fast-Food Chains in the USA dataset license is created from [QSR Magazine](https://www.qsrmagazine.com/). 
 
-Most federal laws and regulations surrounding privacy and data regulations are aimed at protecting individual consumers. Our data is PygWalker
+Most federal laws and regulations surrounding privacy and data regulations are aimed at protecting individual consumers. Our data is PygWalker | chain logos - Terms of Conditions don't allow us to use.
 
 ## References for the data source(s):
 * pygwalker references:
