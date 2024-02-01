@@ -36,6 +36,11 @@ After researching the restaurants’ Terms of Service posted on their websites, 
 *  https://www.kaggle.com/datasets/ulrikthygepedersen/fastfood-nutrition [Which fast food products are worst for you?]
 *  https://www.kaggle.com/datasets/iamsouravbanerjee/top-50-fastfood-chains-in-usa [USA's Culinary Landscape: A Deep Dive into the Top 50 Fast-Food Chains (2021)]
 
+*  Quiz Facts:
+*  https://www.fda.gov/food/food-labeling-nutrition/nutrition-education-resources-materials
+*  https://www.cspinet.org/protecting-our-health/menu-labeling
+*  https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/carbohydrates/art-20045705#:~:text=How%20many%20carbohydrates%20do%20you,grams%20of%20carbs%20a%20day.
+
 ## References for any code used that is not your own
 - Basic Quiz Code
      - https://medium.com/@codepicker57/building-an-interactive-quiz-with-html-css-and-javascript-efe9bd8129e2
