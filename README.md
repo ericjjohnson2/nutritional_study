@@ -18,9 +18,8 @@ We have created visualizations to display the nutritional content of specific fo
 
 
 ## At least one paragraph summarizing efforts for ethical considerations made in the project
-Ethical considerations made for this project: we are assuming fast food is unhealthy. We chose to not utilize web scraping for pricing data since fast food companies as well as websites with pricing data specifically stated we could not scrape data. The source of the dataset is Kaggle.com and the Fastfood Nutrition dataset references this [license:](https://creativecommons.org/licenses/by/4.0/) and the Top 50 Fast-Food Chains in the USA dataset license is created from [QSR Magazine](https://www.qsrmagazine.com/). 
-
-Most federal laws and regulations surrounding privacy and data regulations are aimed at protecting individual consumers. Our data is PygWalker | chain logos - Terms of Conditions don't allow us to use.
+Ethical considerations made for this project: we are assuming fast food is unhealthy. We chose to not utilize web scraping for pricing data since fast food companies as well as websites with pricing data specifically stated we could not scrape data. The source of the dataset is Kaggle.com and the Fastfood Nutrition dataset references this license: and the Top 50 Fast-Food Chains in the USA dataset license is created from QSR Magazine. 
+After researching the restaurants’ Terms of Service posted on their websites, we decided not to post any company logos on our project. Doing so would require written consent from many of the chains, since a company’s logo and marks are viewed as proprietary material. Burger King’s website was the strictest, listing out several types of prohibited content and activities, not limited to spidering, scraping, harvesting, reverse engineering, deciphering or attempting to circumvent any software that’s part of the Services. All chains referenced the Children’s Online Privacy Protection Act of 1998.
 
 ## References for the data source(s):
 * pygwalker references:
