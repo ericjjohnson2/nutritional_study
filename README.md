@@ -1,15 +1,15 @@
 # Project-3-Fastfood Topic: Nutritional Content of Fast Food
 
 ## An overview of the project and its purpose
-Our project provides the nutritional value of food sold at eight major chain fast food restaurants located in Minnesota, specifically at locations within the [Twin Cities, Minnesota.](https://en.wikipedia.org/wiki/Minneapolis%E2%80%93Saint_Paul) This will allow users to analyze/compare several nutritional content:
-* calories
-* protein
-* sodium
-* carbohydrates
-* fat
-* sugar
-* cholesterol
-* fiber 
+Group 3 focused on data visualization of the nutritional content of food sold at eight major chain fast food restaurants located in the [Twin Cities, Minnesota](https://en.wikipedia.org/wiki/Minneapolis%E2%80%93Saint_Paul). Our datasets will allow users to analyze/compare several nutritional values:
+*	calories
+*	protein
+*	sodium
+*	carbohydrates
+*	fat
+*	sugar
+*	cholesterol
+*	fiber
 
 We have created visualizations to display the nutritional content of specific foods and allow users to compare food items. We also created an interactive quiz to help visitors make informed choices when ordering some of America's favorite fast foods.
   
