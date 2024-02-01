@@ -4,6 +4,7 @@ body,
   height: 100%;
   padding: 20px;
   margin: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* help setting the background color of the legend here: https://codepen.io/haakseth/pen/KQbjdO */
