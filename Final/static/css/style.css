@@ -10,7 +10,7 @@ body,
 /* help setting the background color of the legend here: https://codepen.io/haakseth/pen/KQbjdO */
 .legend {
   height: 200px;
-  width: 160px;
+  width: 140px;
   line-height: 16px;
   word-wrap: break-word;
   color: #000000;
