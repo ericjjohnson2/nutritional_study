@@ -18,6 +18,9 @@ Users start on X to be able to view Y, Z, AA. Users can navigate to the fast foo
 ![image](https://github.com/Chud-rf/Project-3-Fastfood/assets/140283164/305333ac-ed79-4aa6-b055-4431e04e66cc)
 - Upon loading the index.html file, users will be directed to a homepage featuring a Leaflet map. This map plots the locations of 8 fast-food restaurants in the Twin Cities metro area. The map contains a legend that corresponds to the color-coded markers, which differentiate the various restaurants. Users can toggle certain restaurants on and off using the overlay in the top right corner. When users click on a marker, a popup displays the restaurant’s name, address, and user rating provided by Google Maps. A double-click on a marker also triggers a zoom function, enabling users to examine the selected restaurant and its surrounding area more closely.
 
+The PyGWalker visualizations show the median or mean macro- and micronutrients across all fast food restaurants, as well the relationships between select nutrients. Last, nutrient relationships are compared between two burger chains.
+- ![image](https://github.com/Chud-rf/Project-3-Fastfood/blob/main/Final/static/img/viz%20screenshot.png)
+
 ## At least one paragraph summarizing efforts for ethical considerations made in the project
 Ethical considerations made for this project: we are assuming fast food is unhealthy. We chose to not utilize web scraping for pricing data since fast food companies as well as websites with pricing data specifically stated we could not scrape data. The source of the dataset is Kaggle.com and the Fastfood Nutrition dataset references this license: and the Top 50 Fast-Food Chains in the USA dataset license is created from QSR Magazine.
 
