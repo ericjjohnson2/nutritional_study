@@ -34,7 +34,6 @@ After researching the restaurants’ Terms of Service posted on their websites, 
 
 * Dataset:
 *  https://www.kaggle.com/datasets/ulrikthygepedersen/fastfood-nutrition [Which fast food products are worst for you?]
-*  https://www.kaggle.com/datasets/iamsouravbanerjee/top-50-fastfood-chains-in-usa [USA's Culinary Landscape: A Deep Dive into the Top 50 Fast-Food Chains (2021)]
 
 *  Quiz Facts:
 *  https://www.fda.gov/food/food-labeling-nutrition/nutrition-education-resources-materials
