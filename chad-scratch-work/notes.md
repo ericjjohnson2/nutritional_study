@@ -1,8 +1,11 @@
 # Chad Fletcher Notes
 
-https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=44.9778,-93.2650&radius=50000&keyword=Chick-fil-A&key=
 
 #### ADD DATA MISSING IN READ ME
+#### ADD SCREENSHOT PAGE TO HTML PAGE
+
+https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=44.9778,-93.2650&radius=50000&keyword=Chick-fil-A&key=
+
 
 # McDonald's   ****
 # Chick-fil-a
