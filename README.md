@@ -52,4 +52,4 @@ After researching the restaurants’ Terms of Service posted on their websites, 
      - Code for word-wrap in legend found [here](https://stackoverflow.com/questions/3587390/how-can-i-make-text-appear-on-next-line-instead-of-overflowing)
 
 
-
+Chad's code snippet: ![Alt text](chad-scratch-work/API_Pull_code.png)
