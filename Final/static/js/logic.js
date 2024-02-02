@@ -155,12 +155,12 @@ d3.json(url).then(function(data) {
 // create a legend for the map
 // helpful code found here: https://codepen.io/haakseth/pen/KQbjdO
 // helpful website for finding numbers of colors found here: https://htmlcolorcodes.com/
-var legend = L.control({position: 'bottomleft'});
+var legend = L.control({position: 'topright'});
 
 legend.onAdd = function(map) {
     var div = L.DomUtil.create("div", "legend");
     div.innerHTML += "<h3>Fast Food Restaurants in the Twin Cities</h3>";
-    div.innerHTML += "<h6>*Double click a marker to zoom in*</h6>";
+    // div.innerHTML += "<h6>*Double click a marker to zoom in*</h6>";
     div.innerHTML += '<i style="background: #A42409"></i><span>McDonalds</span><br>';
     div.innerHTML += '<i style="background: #FFC300"></i><span>Burger King</span><br>';
     div.innerHTML += '<i style="background: #6A2C89"></i><span>Taco Bell</span><br>';
