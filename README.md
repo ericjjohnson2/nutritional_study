@@ -15,7 +15,8 @@ We have created visualizations to display the nutritional content of specific fo
   
 ## Instructions on how to use and interact with the project
 Users start on X to be able to view Y, Z, AA. Users can navigate to the fast food quiz to learn about nutritional content and learn a fun fact about fast food. Users can interact with [PyGWalker](https://docs.kanaries.net/pygwalker), a newer Python Library for Exploratory Data Analysis with Visualization. Note to self: the library is pronounced "Pig Walker."
-- ![image](https://github.com/Chud-rf/Project-3-Fastfood/assets/140283164/93d69e45-40fd-4410-8f8e-5f92bebc6458)
+![image](https://github.com/Chud-rf/Project-3-Fastfood/assets/140283164/305333ac-ed79-4aa6-b055-4431e04e66cc)
+- Upon loading the index.html file, users will be directed to a homepage featuring a Leaflet map. This map plots the locations of 8 fast-food restaurants in the Twin Cities metro area. The map contains a legend that corresponds to the color-coded markers, which differentiate the various restaurants. Users can toggle certain restaurants on and off using the overlay in the top right corner. When users click on a marker, a popup displays the restaurant’s name, address, and user rating provided by Google Maps. A double-click on a marker also triggers a zoom function, enabling users to examine the selected restaurant and its surrounding area more closely.
 
 The PyGWalker visualizations show the median or mean macro- and micronutrients across all fast food restaurants, as well the relationships between select nutrients. Last, nutrient relationships are compared between two burger chains.
 - ![image](https://github.com/Chud-rf/Project-3-Fastfood/blob/main/Final/static/img/viz%20screenshot.png)
@@ -37,7 +38,6 @@ After researching the restaurants’ Terms of Service posted on their websites, 
 
 * Dataset:
 *  https://www.kaggle.com/datasets/ulrikthygepedersen/fastfood-nutrition [Which fast food products are worst for you?]
-*  https://www.kaggle.com/datasets/iamsouravbanerjee/top-50-fastfood-chains-in-usa [USA's Culinary Landscape: A Deep Dive into the Top 50 Fast-Food Chains (2021)]
 
 *  Quiz Facts:
 *  https://www.fda.gov/food/food-labeling-nutrition/nutrition-education-resources-materials
@@ -55,4 +55,4 @@ After researching the restaurants’ Terms of Service posted on their websites, 
      - Code for word-wrap in legend found [here](https://stackoverflow.com/questions/3587390/how-can-i-make-text-appear-on-next-line-instead-of-overflowing)
 
 
-
+Chad's code snippet: ![Alt text](chad-scratch-work/API_Pull_code.png)
