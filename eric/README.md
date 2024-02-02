@@ -10,5 +10,7 @@ altair references:
 https://stackoverflow.com/questions/68891702/dropdown-filter-above-the-chart-in-altair <br>
 https://altair-viz.github.io/user_guide/interactions.html
 
-pandas: 
+other: 
 pandas: https://stackoverflow.com/questions/13411544/delete-a-column-from-a-pandas-dataframe
+https://docs.python.org/3/library/sqlite3.html
+ChatGPT

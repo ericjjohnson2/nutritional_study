@@ -3,7 +3,7 @@ import pandas as pd
 import sqlite3
 
 # connect to db
-conn = sqlite3.connect('../data/chain_db.sqlite')
+conn = sqlite3.connect('../data/places.sqlite')
 
 
 # read the csv data into a dataframe
