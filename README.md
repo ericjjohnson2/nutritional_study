@@ -16,6 +16,7 @@ We have created visualizations to display the nutritional content of specific fo
 ## Instructions on how to use and interact with the project
 Users start on X to be able to view Y, Z, AA. Users can navigate to the fast food quiz to learn about nutritional content and learn a fun fact about fast food. Users can interact with [PyGWalker](https://docs.kanaries.net/pygwalker), a newer Python Library for Exploratory Data Analysis with Visualization. Note to self: the library is pronounced "Pig Walker."
 - ![image](https://github.com/Chud-rf/Project-3-Fastfood/assets/140283164/93d69e45-40fd-4410-8f8e-5f92bebc6458)
+
 The PyGWalker visualizations show the median or mean macro- and micronutrients across all fast food restaurants, as well the relationships between select nutrients. Last, nutrient relationships are compared between two burger chains.
 - ![image](https://github.com/Chud-rf/Project-3-Fastfood/blob/main/Final/static/img/viz%20screenshot.png)
 
