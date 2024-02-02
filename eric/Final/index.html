@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fast Food in the Twin Cities</title>
+
+  <!-- D3 library -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+
+  <!-- MomentJS -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""/>
+
+  <!-- Leaflet JavaScript code -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""></script>
+
+  <!-- polyfill.io is the library for using newer JavaScript features (such as Object.assign) in older browers. -->
+  <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Sanchez" rel="stylesheet">
+
+  <!-- Icons -->
+  <script src="static/js/leaflet.extra-markers.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="static/css/leaflet.extra-markers.min.css">
+
+  <!-- Our CSS -->
+  <link rel="stylesheet" type="text/css" href="static/css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1>Fast Food Nutritional Information</h1>
+        <p>Use the interactive charts below to explore the dataset</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="well">
+          <p>Test Subject ID No.:</p>
+          <a href="quiz.html">Quiz Test</a>
+          <a href="pygwalker.html">Pygwalker Test</a>
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <p class="panel-title">Let's learn!</p>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <!-- <div id="quiz">
+          <div class="logo-container">
+            <img class="logo-left" src="static/img/310_burgerking.jpg" alt="Left Logo">
+            <h1>Fast Food Quiz</h1>
+            <img class="logo-right" src="static/img/McDonalds-logo-500x281.png" alt="Right Logo">
+          </div>
+          <div id="question"></div>
+          <div id="options"></div>
+          <div id="result-message"></div>
+          <div id="answer-message"></div>
+          <div id="fact-message"></div>
+          <h6>Source Code by CodePicker</h6>
+        </div> -->
+      </div>
+        </div>
+    <div class="row">
+      <div class="col-md-12">
+      </div>
+    </div>
+  </div>
+  
+  <!-- The div that holds our map -->
+  <div id="map-id"></div>
+
+  <!-- JavaScript files -->
+  <!-- <script type="text/javascript" src="static/js/data.js"></script> -->
+  <script type="text/javascript" src="static/js/logic.js"></script>
+
+</body>
+
+</html>
