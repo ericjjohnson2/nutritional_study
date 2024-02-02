@@ -9,8 +9,8 @@ body,
 
 /* help setting the background color of the legend here: https://codepen.io/haakseth/pen/KQbjdO */
 .legend {
-  height: 250px;
-  width: 160px;
+  height: 200px;
+  width: 140px;
   line-height: 16px;
   word-wrap: break-word;
   color: #000000;

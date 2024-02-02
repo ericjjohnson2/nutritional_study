@@ -139,7 +139,8 @@ d3.json(url).then(function(data) {
         newMarker.addTo(layers[restaurantName]);
 
         // Bind a popup to the marker that will  display on being clicked. This will be rendered as HTML.
-        newMarker.bindPopup(`<h2>${data[i].Restaurant}</h2><hr><p>${data[i].Address}, ${data[i].City}</p>`);
+        newMarker.bindPopup(`<h2>${data[i].Restaurant}</h2><hr><p>${data[i].Address}, ${data[i].City}</p>
+                            <hr><p>User Rating: ${data[i].Rating}</p>`);
 
         // center the map on a marker when you double click it
         // code found here for fit bounds: https://jeffreymorgan.io/articles/how-to-center-a-leaflet-map-on-a-marker/
@@ -154,12 +155,12 @@ d3.json(url).then(function(data) {
 // create a legend for the map
 // helpful code found here: https://codepen.io/haakseth/pen/KQbjdO
 // helpful website for finding numbers of colors found here: https://htmlcolorcodes.com/
-var legend = L.control({position: 'bottomleft'});
+var legend = L.control({position: 'topright'});
 
 legend.onAdd = function(map) {
     var div = L.DomUtil.create("div", "legend");
     div.innerHTML += "<h3>Fast Food Restaurants in the Twin Cities</h3>";
-    div.innerHTML += "<h6>*Double click a marker to zoom in*</h6>";
+    // div.innerHTML += "<h6>*Double click a marker to zoom in*</h6>";
     div.innerHTML += '<i style="background: #A42409"></i><span>McDonalds</span><br>';
     div.innerHTML += '<i style="background: #FFC300"></i><span>Burger King</span><br>';
     div.innerHTML += '<i style="background: #6A2C89"></i><span>Taco Bell</span><br>';
