@@ -44,6 +44,14 @@ def index():
     response.headers.add('Access-Control-Allow-Origin', '*')
     return response
 
+@app.route("/image")
+def image():
+    return send_file("templates/image.html")
+
+    # Add CORS header
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
+
 @app.route("/quiz")
 def quiz():
     return send_file("templates/quiz.html")

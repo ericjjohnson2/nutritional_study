@@ -33,56 +33,52 @@
 
   <!-- Our CSS -->
   <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+
+  <!-- Bootstrap CSS -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
 </head>
 
 <body>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 jumbotron text-center">
-        <h1>Fast Food Nutritional Information</h1>
-        <p>Use the interactive map and links below to explore the dataset</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-2">
-        <div class="well">
-          <!-- <p>Test Subject ID No.:</p> -->
-          <a href="http://127.0.0.1:5000/quiz">Fast Food Quiz</a>
-          <br>
-          <a href="http://127.0.0.1:5000/pygwalker">PyGWalker Visualizations</a>
-          <!-- <select id="selDataset" onchange="optionChanged(this.value)"></select> -->
-        </div>
-        <div class="panel panel-primary">
-          <div class="panel-heading">
-            <p class="panel-title">Let's learn!</p>
-          </div>
-          <div id="sample-metadata" class="panel-body"></div>
-        </div>
-      </div>
-      <div class="col-md-5">
-        <!-- <div id="quiz">
-          <div class="logo-container">
-            <img class="logo-left" src="../static/img/310_burgerking.jpg" alt="Left Logo">
-            <h1>Fast Food Quiz</h1>
-            <img class="logo-right" src="../static/img/McDonalds-logo-500x281.png" alt="Right Logo">
-          </div>
-          <div id="question"></div>
-          <div id="options"></div>
-          <div id="result-message"></div>
-          <div id="answer-message"></div>
-          <div id="fact-message"></div>
-          <h6>Source Code by CodePicker</h6>
-        </div> -->
-      </div>
-        </div>
-    <div class="row">
-      <div class="col-md-12">
-      </div>
-    </div>
+  <div class="directory">
+    <ul>
+      <li><a href="http://127.0.0.1:5000">Home</a></li>
+      <li><a href="http://127.0.0.1:5000/image">Code</a></li>
+      <li><a href="http://127.0.0.1:5000/pygwalker">Pygwalker</a></li>
+      <li><a href="http://127.0.0.1:5000/quiz">Quiz</a></li>
+    </ul>
   </div>
-  
-  <!-- The div that holds our map -->
-  <div id="map-id"></div>
+  <div class="container">
+    <div class="Header">
+      <h1>Fast Food Nutritional Information</h1>
+      <p>Use the interactive charts below to explore the dataset</p>
+    </div>
+    <div class="item-one">
+      <div>
+        <h2>Fast Food Item:</h2>
+        <select id="selDataset" onchange="optionChanged(this.value)"></select>
+      </div>
+      <div>
+        <div>
+          <h4>Item Info</h4>
+        </div>
+        <div id="sample-metadata"></div>
+      </div>
+    </div>
+    <div class="item-two">
+      <div>
+        <h2>Fast Food Item:</h2>
+        <select id="selDatasetTwo" onchange="optionChanged(this.value)"></select>
+      </div>
+      <div>
+        <div>
+          <h4>Item Info</h4>
+        </div>
+        <div id="sample-metadata-two"></div>
+      </div>
+    </div>
+    <!-- The div that holds our map -->
+    <div id="map-id" class="map"></div>
+  </div>
 
   <!-- JavaScript files -->
   <!-- <script type="text/javascript" src="../static/js/data.js"></script> -->

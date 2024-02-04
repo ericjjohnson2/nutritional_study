@@ -1,6 +1,94 @@
 // assign the local url to a constant variable
 const url = "http://127.0.0.1:5000/api/location"
+const nutritionURL = "http://127.0.0.1:5000/api/nutrition"
 // const summaryURL = "http://127.0.0.1:5000/api/summary";
+
+// ****************
+// DROPDOWN MENU
+// ****************
+
+// Fetch the JSON data
+let nutritionData = d3.json(nutritionURL);
+
+// Populate Dropdown Menu
+function init() {
+    let dropdownMenu = d3.select('#selDataset');
+    let dropdownMenuTwo = d3.select('#selDatasetTwo');
+
+    nutritionData.then(data => {
+        // console.log(data);
+
+        // Fill in dropdown menu
+        for (let i = 0; i < data.length; i++) {
+            let itemName = data[i]['Item'];
+            let locationName = data[i]['Restaurant'];
+            dropdownMenu.append('option').text(locationName + ': ' + itemName).property('value', itemName);
+        };
+
+        // Fill in dropdown menu Two
+        for (let i = 0; i < data.length; i++) {
+            let itemName = data[i]['Item'];
+            let locationName = data[i]['Restaurant'];
+            dropdownMenuTwo.append('option').text(locationName + ': ' + itemName).property('value', itemName);
+        };
+
+        // Read the dropdown value
+        let selectedIndex = dropdownMenu.property('selectedIndex');
+        let selectedIndexTwo = dropdownMenuTwo.property('selectedIndex');
+
+
+        itemInfo(selectedIndex, selectedIndexTwo);
+        // drawBubbleGraph(selectedIndex);
+    });
+};
+
+function itemInfo(index, index2) {
+    nutritionData.then(data => {
+        console.log(data);
+
+        // Select metadata section in HTML
+        let demographicInfo = d3.select('#sample-metadata');
+        let demographicInfoTwo = d3.select('#sample-metadata-two');
+
+        // Clear metadata section
+        demographicInfo.html('');
+        demographicInfoTwo.html('');
+
+        // Add new metadata to section
+        demographicInfo.append('h5').html(`Calories: ${data[index].Calories}`);
+        demographicInfo.append('h5').html(`Protein: ${data[index].Protein}`);
+        demographicInfo.append('h5').html(`Sodium: ${data[index].Sodium}`);
+        demographicInfo.append('h5').html(`Fiber: ${data[index].Fiber}`);
+
+        // Add new metadata to section Two
+        demographicInfoTwo.append('h5').html(`Calories: ${data[index2].Calories}`);
+        demographicInfoTwo.append('h5').html(`Protein: ${data[index2].Protein}`);
+        demographicInfoTwo.append('h5').html(`Sodium: ${data[index2].Sodium}`);
+        demographicInfoTwo.append('h5').html(`Fiber: ${data[index2].Fiber}`);
+
+    });
+};
+
+
+// Function called by DOM changes
+function optionChanged() {
+    let dropdownMenu = d3.select('#selDataset');
+    let dropdownMenuTwo = d3.select('#selDatasetTwo');
+
+    // Assign the value of the dropdown menu
+    let selectedIndex = dropdownMenu.property('selectedIndex');
+    let selectedIndexTwo = dropdownMenuTwo.property('selectedIndex');
+
+  
+    // Call function to update the chart
+    itemInfo(selectedIndex, selectedIndexTwo);
+    // drawBubbleGraph(selectedIndex);
+};
+
+
+// ****************
+// MAP FEATURES
+// ****************
 
 // Create the tile layer that will be the background of our map.
 let streetmap = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -101,13 +189,13 @@ let icons = {
 
 // Perform an API call to the places dataset
 d3.json(url).then(function(data) {
-    console.log(data)
+    // console.log(data)
     // Initialize restaurantName, which will be used as a key to access the appropriate layers and icons
     let restaurantName;
 
     // use a for loop to cycle through the locations
     for (let i = 0; i < data.length; i++) {
-        
+
         if (data[i].Restaurant.includes("McDonald's")) {
             restaurantName = "McDonalds";
         }
@@ -177,3 +265,4 @@ legend.onAdd = function(map) {
 };
 
 legend.addTo(map);
+init();
