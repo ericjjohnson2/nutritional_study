@@ -108,31 +108,6 @@ d3.json(url).then(function(data) {
     // use a for loop to cycle through the locations
     for (let i = 0; i < data.length; i++) {
         
-        // if (data[i].Restaurant == "McDonald's") {
-        //     restaurantName = "McDonalds";
-        // }
-        // else if (data[i].Restaurant == "Burger King") {
-        //     restaurantName = "Burger_King";
-        // }
-        // else if (data[i].Restaurant == "Taco Bell") {
-        //     restaurantName = "Taco_Bell";
-        // }
-        // else if (data[i].Restaurant == "Chick-fil-A") {
-        //     restaurantName = "Chick_Fil_A";
-        // }
-        // else if (data[i].Restaurant == "Sonic Drive-In") {
-        //     restaurantName = "Sonic";
-        // }
-        // else if (data[i].Restaurant == "Arby's") {
-        //     restaurantName = "Arbys";
-        // }
-        // else if (data[i].Restaurant == "Dairy Queen") {
-        //     restaurantName = "Dairy_Queen";
-        // }
-        // else if (data[i].Restaurant == "Subway") {
-        //     restaurantName = "Subway";
-        // }
-
         if (data[i].Restaurant.includes("McDonald's")) {
             restaurantName = "McDonalds";
         }
