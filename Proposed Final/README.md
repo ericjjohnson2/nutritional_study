@@ -53,6 +53,18 @@ After researching the restaurants’ Terms of Service posted on their websites, 
      - Code found here for fit bounds in leaflet found [here](https://jeffreymorgan.io/articles/how-to-center-a-leaflet-map-on-a-marker/).
      - Support setting up the legend found [here](https://codepen.io/haakseth/pen/KQbjdO) and html color identification found [here](https://htmlcolorcodes.com/).
      - Code for word-wrap in legend found [here](https://stackoverflow.com/questions/3587390/how-can-i-make-text-appear-on-next-line-instead-of-overflowing)
+- Jupyter Widgets
+     - https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20List.html
+     - https://stackoverflow.com/questions/61821652/using-drop-down-widget-from-ipywidgets
+     - Debugging with ChatGPT
+     - Originally was trying to use the interactive features of Altair for the drop downs but when debugging with ChatGPT it suggested using Jupyter Widgets instead and I used code from that suggestion. 
+- Altair & Altair Viewer
+     - https://altair-viz.github.io/gallery/index.html
+     - https://stackoverflow.com/questions/60350621/altair-specify-a-renderer-thats-enabled-by-default 
+- SQLite3
+     - Used ChatGPT to debug an indexing error when creating the db from csvs 
+
+     
 
 
 Chad's code snippet: ![Alt text](chad-scratch-work/API_Pull_code.png)
