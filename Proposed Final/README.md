@@ -48,6 +48,7 @@ After researching the restaurants’ Terms of Service posted on their websites, 
 - Basic Quiz Code
      - https://medium.com/@codepicker57/building-an-interactive-quiz-with-html-css-and-javascript-efe9bd8129e2
 - Flask app route code - assistance from ChatGPT
+     - https://stackoverflow.com/questions/26980713/solve-cross-origin-resource-sharing-with-flask
 - Map Code
      - Help to set the background color of the legend [here](https://codepen.io/haakseth/pen/KQbjdO). 
      - Code found here for fit bounds in leaflet found [here](https://jeffreymorgan.io/articles/how-to-center-a-leaflet-map-on-a-marker/).
