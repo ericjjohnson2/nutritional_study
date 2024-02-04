@@ -167,7 +167,7 @@ d3.json(url).then(function(data) {
         newMarker.addTo(layers[restaurantName]);
 
         // Bind a popup to the marker that will  display on being clicked. This will be rendered as HTML.
-        newMarker.bindPopup(`<h2>${data[i].Restaurant}</h2><hr><p>${data[i].Address}, ${data[i].City}</p>
+        newMarker.bindPopup(`<h2>${data[i].Restaurant}</h2><hr><p>${data[i].Address}</p>
                             <hr><p>User Rating: ${data[i].Rating}</p>`);
 
         // center the map on a marker when you double click it
