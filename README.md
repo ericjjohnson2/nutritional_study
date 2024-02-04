@@ -19,7 +19,9 @@ We have created visualizations to display the nutritional content of specific fo
 
 ![image](https://github.com/Chud-rf/Project-3-Fastfood/blob/main/Final/static/img/viz%20screenshot.png)
 - Users can interact with [PyGWalker](https://docs.kanaries.net/pygwalker), a newer Python Library for Exploratory Data Analysis with Visualization. The PyGWalker visualizations show the median or mean macro- and micro-nutrients across all fast food restaurants, as well as the relationships between select nutrients. Last, nutrient relationships are compared between the two burger chains.
-- Users can navigate to the fast food quiz to learn about nutritional content and learn fun facts about fast food.
+
+![image](https://github.com/Chud-rf/Project-3-Fastfood/assets/140283164/49a8b92c-4a8f-4e24-94b6-faf1c1752930)
+- Users can navigate to the fast food quiz to test their knowledge of fast food nutritional content. Users will be prompted with a question and 4-8 multiple-choice options. When they click on one of the options, the quiz will let them know if they are correct or not. After a moment, the next question will load.
 
 ## Ethical considerations made in the project:
 Ethical considerations made for this project: we are assuming fast food is unhealthy. We chose to not utilize web scraping for pricing data since fast food companies as well as websites with pricing data specifically stated we could not scrape data. The source of the dataset is Kaggle.com and the Fastfood Nutrition dataset references this license: and the Top 50 Fast-Food Chains in the USA dataset license is created from QSR Magazine.
