@@ -17,8 +17,6 @@ We have created visualizations to display the nutritional content of specific fo
 ### Homepage
 Upon loading the routes.py file, users will be directed to a homepage featuring a series of navigation links, two drop-down menus, and a Leaflet map:
 ![image](https://github.com/Chud-rf/Project-3-Fastfood/assets/140283164/f7d80035-ea1d-4045-b4cd-834730d979e0)
-![image](https://github.com/Chud-rf/Project-3-Fastfood/assets/140283164/c319e102-f139-48fe-9c35-c90659ec0c70)
-![image](https://github.com/Chud-rf/Project-3-Fastfood/assets/140283164/305333ac-ed79-4aa6-b055-4431e04e66cc)
 - The links will take users to additional interactive visualizations, which are laid out in more detail below.
 - The drop-down menus allow you to compare two fast food items based on their calories, protein, sodium, and fiber content.
 - The map plots the locations of 8 fast-food restaurants in the Twin Cities metro area. The map contains a legend that corresponds to the color-coded markers, which differentiate the various restaurants. Users can toggle certain restaurants on and off using the overlay in the top right corner. When users click on a marker, a popup displays the restaurant’s name, address, and user rating provided by Google Maps. A double-click on a marker also triggers a zoom function, enabling users to examine the selected restaurant and its surrounding area more closely.
