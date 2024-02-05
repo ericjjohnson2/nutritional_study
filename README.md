@@ -36,23 +36,19 @@ After researching the restaurants’ Terms of Service posted on their websites, 
 
 ## References for the data source(s):
 ### PyGWalker references:
-* https://github.com/Kanaries/pygwalker
-* https://www.youtube.com/watch?v=Ynt7Etci1KU
-* https://stackoverflow.com/questions/36351109/ipython-notebook-ipywidgets-does-not-show
-
+- https://github.com/Kanaries/pygwalker
+- https://www.youtube.com/watch?v=Ynt7Etci1KU
+- https://stackoverflow.com/questions/36351109/ipython-notebook-ipywidgets-does-not-show
 ### Flask reference:
-*  https://www.digitalocean.com/community/tutorials/how-to-use-an-sqlite-database-in-a-flask-application
-
+- https://www.digitalocean.com/community/tutorials/how-to-use-an-sqlite-database-in-a-flask-application
 ### Fast Food Dataset:
-*  https://www.kaggle.com/datasets/ulrikthygepedersen/fastfood-nutrition [Which fast food products are worst for you?]
-
+- https://www.kaggle.com/datasets/ulrikthygepedersen/fastfood-nutrition [Which fast food products are worst for you?]
 ### Quiz Facts:
-*  https://www.fda.gov/food/food-labeling-nutrition/nutrition-education-resources-materials
-*  https://www.cspinet.org/protecting-our-health/menu-labeling
-*  https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/carbohydrates/art-20045705#:~:text=How%20many%20carbohydrates%20do%20you,grams%20of%20carbs%20a%20day.
-
+- https://www.fda.gov/food/food-labeling-nutrition/nutrition-education-resources-materials
+- https://www.cspinet.org/protecting-our-health/menu-labeling
+- https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/carbohydrates/art-20045705#:~:text=How%20many%20carbohydrates%20do%20you,grams%20of%20carbs%20a%20day.
 ### Google Places API
-*  https://developers.google.com/maps/documentation/places/web-service
+- https://developers.google.com/maps/documentation/places/web-service
 
 ## References for any code used that is not your own
 - Basic Quiz Code
