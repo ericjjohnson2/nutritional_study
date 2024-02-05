@@ -42,7 +42,7 @@ After researching the restaurants’ Terms of Service posted on their websites, 
 ### Flask reference:
 - https://www.digitalocean.com/community/tutorials/how-to-use-an-sqlite-database-in-a-flask-application
 ### Fast Food Dataset:
-- https://www.kaggle.com/datasets/ulrikthygepedersen/fastfood-nutrition [Which fast food products are worst for you?]
+- https://www.kaggle.com/datasets/ulrikthygepedersen/fastfood-nutrition
 ### Quiz Facts:
 - https://www.fda.gov/food/food-labeling-nutrition/nutrition-education-resources-materials
 - https://www.cspinet.org/protecting-our-health/menu-labeling
