@@ -35,22 +35,24 @@ Ethical considerations made for this project: we are assuming fast food is unhea
 After researching the restaurants’ Terms of Service posted on their websites, we decided not to post any company logos on our project. Doing so would require written consent from many of the chains since a company’s logo and marks are viewed as proprietary material. Burger King’s website was the strictest, listing out several types of prohibited content and activities, not limited to spidering, scraping, harvesting, reverse engineering, deciphering, or attempting to circumvent any software that’s part of the Services. All chains' websites referenced the Children’s Online Privacy Protection Act of 1998.
 
 ## References for the data source(s):
-* PyGWalker references:
-
+### PyGWalker references:
 * https://github.com/Kanaries/pygwalker
 * https://www.youtube.com/watch?v=Ynt7Etci1KU
 * https://stackoverflow.com/questions/36351109/ipython-notebook-ipywidgets-does-not-show
 
-* Flask reference:
+### Flask reference:
 *  https://www.digitalocean.com/community/tutorials/how-to-use-an-sqlite-database-in-a-flask-application
 
-* Dataset:
+### Fast Food Dataset:
 *  https://www.kaggle.com/datasets/ulrikthygepedersen/fastfood-nutrition [Which fast food products are worst for you?]
 
-*  Quiz Facts:
+### Quiz Facts:
 *  https://www.fda.gov/food/food-labeling-nutrition/nutrition-education-resources-materials
 *  https://www.cspinet.org/protecting-our-health/menu-labeling
 *  https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/carbohydrates/art-20045705#:~:text=How%20many%20carbohydrates%20do%20you,grams%20of%20carbs%20a%20day.
+
+### Google Places API
+*  https://developers.google.com/maps/documentation/places/web-service
 
 ## References for any code used that is not your own
 - Basic Quiz Code
@@ -61,6 +63,3 @@ After researching the restaurants’ Terms of Service posted on their websites, 
      - Code found here for fit bounds in leaflet found [here](https://jeffreymorgan.io/articles/how-to-center-a-leaflet-map-on-a-marker/).
      - Support setting up the legend found [here](https://codepen.io/haakseth/pen/KQbjdO) and html color identification found [here](https://htmlcolorcodes.com/).
      - Code for word-wrap in legend found [here](https://stackoverflow.com/questions/3587390/how-can-i-make-text-appear-on-next-line-instead-of-overflowing)
-
-
-Chad's code snippet: ![Alt text](chad-scratch-work/API_Pull_code.png)
