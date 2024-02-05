@@ -14,9 +14,10 @@ Group 3 focused on data visualization of the nutritional content of food sold at
 We have created visualizations to display the nutritional content of specific foods and allow users to compare food items. We also created an interactive quiz to help visitors make informed choices when ordering some of America's favorite fast foods.
   
 ## Instructions on how to use and interact with the project
+Upon loading the index.html file, users will be directed to a homepage featuring two drop-down menus and a Leaflet map. The drop-down menus allow you to compare two fast food items based on their calories, protein, sodium, and fiber content.
+
 ![image](https://github.com/Chud-rf/Project-3-Fastfood/assets/140283164/c319e102-f139-48fe-9c35-c90659ec0c70)
 ![image](https://github.com/Chud-rf/Project-3-Fastfood/assets/140283164/305333ac-ed79-4aa6-b055-4431e04e66cc)
-- Upon loading the index.html file, users will be directed to a homepage featuring two drop-down menus and a Leaflet map. The drop-down menus allow you to compare two fast food items based on their calories, protein, sodium, and fiber content.
 - The map plots the locations of 8 fast-food restaurants in the Twin Cities metro area. The map contains a legend that corresponds to the color-coded markers, which differentiate the various restaurants. Users can toggle certain restaurants on and off using the overlay in the top right corner. When users click on a marker, a popup displays the restaurant’s name, address, and user rating provided by Google Maps. A double-click on a marker also triggers a zoom function, enabling users to examine the selected restaurant and its surrounding area more closely.
 
 ![image](https://github.com/Chud-rf/Project-3-Fastfood/blob/main/Final/static/img/viz%20screenshot.png)
