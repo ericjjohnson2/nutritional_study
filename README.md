@@ -22,7 +22,7 @@ Upon loading the routes.py file, users will be directed to a homepage featuring 
 - The map plots the locations of 8 fast-food restaurants in the Twin Cities metro area. The map contains a legend that corresponds to the color-coded markers, which differentiate the various restaurants. Users can toggle certain restaurants on and off using the overlay in the top right corner. When users click on a marker, a popup displays the restaurant’s name, address, and user rating provided by Google Maps. A double-click on a marker also triggers a zoom function, enabling users to examine the selected restaurant and its surrounding area more closely.
 
 ### PyGWalker
-![image] (https://github.com/Chud-rf/Project-3-Fastfood/blob/main/app/static/img/viz%20screenshot.png)
+![image](https://github.com/Chud-rf/Project-3-Fastfood/blob/main/app/static/img/viz%20screenshot.png)
 - Users can interact with [PyGWalker](https://docs.kanaries.net/pygwalker), a newer Python Library for Exploratory Data Analysis with Visualization. The PyGWalker visualizations show the median or mean macro- and micro-nutrients across all fast food restaurants, as well as the relationships between select nutrients. Last, nutrient relationships are compared between the two burger chains.
 
 ### Fast Food Quiz
